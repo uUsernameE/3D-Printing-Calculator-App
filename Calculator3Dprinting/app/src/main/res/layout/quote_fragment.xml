@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--
+        <?xml version="1.0" encoding="utf-8"?>
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64dp"
+                android:onClick="onClick"
+                android:text="@string/quote_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/quote"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/spool_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:hint="@string/spool_priceHint"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/spool_priceText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:autofillHints="false" />
+
+            <EditText
+                android:id="@+id/spool_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:hint="@string/spool_weightHint"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/spool_weightText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:autofillHints="false" />
+
+            <EditText
+                android:id="@+id/print_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:hint="@string/print_weightHint"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/print_weightText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:autofillHints="false" />
+
+            <EditText
+                android:id="@+id/work_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:hint="@string/work_hoursHint"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/work_hoursText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:autofillHints="false" />
+
+            <EditText
+                android:id="@+id/hourly_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:hint="@string/hourly_rateHint"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/hourly_rateText"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:autofillHints="false" />
+
+            <TextView
+                android:id="@+id/spool_priceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spool_price"
+                app:layout_constraintBottom_toTopOf="@+id/spool_weightText"
+                app:layout_constraintEnd_toStartOf="@+id/spool_price"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/spool_weightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/spool_weight"
+                app:layout_constraintBottom_toTopOf="@+id/print_weightText"
+                app:layout_constraintEnd_toStartOf="@+id/spool_weight"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spool_priceText" />
+
+            <TextView
+                android:id="@+id/print_weightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/print_weight"
+                app:layout_constraintBottom_toTopOf="@+id/work_hoursText"
+                app:layout_constraintEnd_toStartOf="@+id/print_weight"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spool_weightText" />
+
+            <TextView
+                android:id="@+id/work_hoursText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_hours"
+                app:layout_constraintBottom_toTopOf="@+id/hourly_rateText"
+                app:layout_constraintEnd_toStartOf="@+id/work_hours"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/print_weightText" />
+
+            <TextView
+                android:id="@+id/hourly_rateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hourly_rate"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toStartOf="@+id/hourly_rate"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/work_hoursText" />
+
+            <TextView
+                android:id="@+id/quote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quoteText"
+                app:layout_constraintBaseline_toBaselineOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/button" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        -->
+    </ScrollView>
+</LinearLayout>

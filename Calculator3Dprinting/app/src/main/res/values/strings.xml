@@ -1,0 +1,67 @@
+<resources>
+    <!--Quote-->
+    <string name="app_name">Calculator3Dprinting</string>
+    <string name="spool_price">Price of New Spool in US Dollars</string>
+    <string name="spool_weight">Weight of New Spool in Kg</string>
+    <string name="print_weight">Weight of Project in grams</string>
+    <string name="work_hours">Time at Work in Minutes</string>
+    <string name="hourly_rate">Enter Hourly Rate in US Dollars</string>
+
+    <string name="spool_priceHint">Enter Price<!--of a New Spool--></string>
+    <string name="spool_weightHint">Enter Weight<!--of a New Spool--></string>
+    <string name="print_weightHint">Enter Weight<!--of the Item--></string>
+    <string name="work_hoursHint">Enter Time</string>
+    <string name="hourly_rateHint">Enter Wage</string>
+
+
+    <!--Buttons-->
+    <string name="quote_button">Get Quote</string>
+    <string name="clear_button">Clear</string>
+    <string name="quoteText">Enter Information</string>
+    <string name="delete_button">Delete</string>
+    <string name="savePrinter_button">Save Printer</string>
+
+    <!--Printer-->
+    <string name="p_name">Enter Name</string>
+    <string name="material_diameter">Enter Diameter of Acceptable Material in mm</string>
+    <string name="p_price">Enter Price of Printer in US Dollars</string>
+    <string name="depreciation_time">Enter Total Time of Depreciation in Hours</string>
+    <string name="service_costs">Enter Service Costs per Life in US Dollars</string>
+    <string name="energy_consumption">Enter Energy Consumption in kWh / h</string>
+
+    <string name="p_nameHint">Enter Name</string>
+    <string name="material_diameterHint">Enter Diameter</string>
+    <string name="p_priceHint">Enter Price</string>
+    <string name="depreciation_timeHint">Enter Hours</string>
+    <string name="service_costsHint">Enter Service Costs</string>
+    <string name="energy_consumptionHint">Enter Energy</string>
+
+    <!--Edit Printer-->
+    <string name="p_nameED">Edit Name</string>
+    <string name="material_diameterED">Edit Diameter of Acceptable Material in mm</string>
+    <string name="p_priceED">Edit Price of Printer in US Dollars</string>
+    <string name="depreciation_timeED">Edit Total Time of Depreciation in Hours</string>
+    <string name="service_costsED">Edit Service Costs per Life in US Dollars</string>
+    <string name="energy_consumptionED">Edit Energy Consumption in kWh / h</string>
+
+    <string name="p_nameHintED">Edit Name</string>
+    <string name="material_diameterHintED">Edit Diameter</string>
+    <string name="p_priceHintED">Edit Price</string>
+    <string name="depreciation_timeHintED">Edit Hours</string>
+    <string name="service_costsHintED">Edit Service Costs</string>
+    <string name="energy_consumptionHintED">Edit Energy</string>
+
+
+    <!--Database-->
+    <string name="databaseUser" templateMergeStrategy="preserve" translatable="false">postgres</string>
+    <string name="databaseHost" templateMergeStrategy="preserve" translatable="false">mydb.cwmvkzxze1wc.us-east-2.rds.amazonaws.com</string>
+    <string name="databasePort" templateMergeStrategy="preserve" translatable="false">5432</string>
+    <string name="databasePassword" templateMergeStrategy="preserve" translatable="false">b5iTzkPPhMCuaCbhJcqz</string>
+    <string name="databaseName" templateMergeStrategy="preserve" translatable="false">mydb</string>
+
+
+    <!--Tabs-->
+    <string name="general_tab">General Tab</string>
+    <string name="printer_tab">Printer Tab</string>
+    <string name="materials_tab">Materials Tab</string>
+</resources>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/delete_button"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditTextED"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="298dp" />
+
+    <EditText
+        android:id="@+id/nameEditTextED"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="48dp"
+        android:autofillHints="false"
+        android:ems="10"
+        android:hint="@string/p_nameED"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/diameterTextED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextED" />
+
+    <EditText
+        android:id="@+id/diameterEditTextED"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="48dp"
+        android:autofillHints="false"
+        android:ems="10"
+        android:hint="@string/material_diameterED"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/priceTextED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diameterTextED" />
+
+    <EditText
+        android:id="@+id/priceEditTextED"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="48dp"
+        android:autofillHints="false"
+        android:ems="10"
+        android:hint="@string/p_priceED"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/depreciationTextED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceTextED" />
+
+    <EditText
+        android:id="@+id/depreciationEditTextED"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="48dp"
+        android:autofillHints="false"
+        android:ems="10"
+        android:hint="@string/depreciation_timeED"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/serviceTextED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/depreciationTextED" />
+
+    <EditText
+        android:id="@+id/serviceEditTextED"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="48dp"
+        android:autofillHints="false"
+        android:ems="10"
+        android:hint="@string/service_costsED"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/energyTextED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceTextED" />
+
+    <EditText
+        android:id="@+id/energyEditTextED"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="96dp"
+        android:autofillHints="false"
+        android:ems="10"
+        android:hint="@string/energy_consumptionED"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/energyTextED" />
+
+
+    <TextView
+        android:id="@+id/nameTextED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/p_nameHintED"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/diameterTextED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/material_diameterHintED"
+        app:layout_constraintBottom_toTopOf="@+id/priceTextED"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextED" />
+
+    <TextView
+        android:id="@+id/priceTextED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/p_priceHintED"
+        app:layout_constraintBottom_toTopOf="@+id/depreciationTextED"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diameterTextED" />
+
+    <TextView
+        android:id="@+id/depreciationTextED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/depreciation_timeHintED"
+        app:layout_constraintBottom_toTopOf="@+id/serviceTextED"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceTextED" />
+
+    <TextView
+        android:id="@+id/serviceTextED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/service_costsHintED"
+        app:layout_constraintBottom_toTopOf="@+id/energyTextED"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/depreciationTextED" />
+
+    <TextView
+        android:id="@+id/energyTextED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="96dp"
+        android:text="@string/energy_consumptionHintED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceTextED" />
+
+    <TextView
+        android:id="@+id/currentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Current Name"
+        app:layout_constraintBottom_toBottomOf="@+id/nameTextED"
+        app:layout_constraintStart_toEndOf="@+id/nameTextED" />
+
+    <TextView
+        android:id="@+id/currentDepreciation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Current Hours"
+        app:layout_constraintBottom_toBottomOf="@+id/depreciationTextED"
+        app:layout_constraintStart_toEndOf="@+id/depreciationTextED" />
+
+    <TextView
+        android:id="@+id/currentSvcCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Current Service Cost"
+        app:layout_constraintBottom_toBottomOf="@+id/serviceTextED"
+        app:layout_constraintStart_toEndOf="@+id/serviceTextED" />
+
+    <TextView
+        android:id="@+id/currentEnergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Current Energy"
+        app:layout_constraintBottom_toBottomOf="@+id/energyTextED"
+        app:layout_constraintStart_toEndOf="@+id/energyTextED" />
+
+    <TextView
+        android:id="@+id/currentPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Current Price"
+        app:layout_constraintBottom_toBottomOf="@+id/priceTextED"
+        app:layout_constraintStart_toEndOf="@+id/priceTextED" />
+
+    <TextView
+        android:id="@+id/currentDiameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Current Diameter"
+        app:layout_constraintBottom_toBottomOf="@+id/diameterTextED"
+        app:layout_constraintStart_toEndOf="@+id/diameterTextED" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
