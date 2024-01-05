@@ -11,4 +11,4 @@ ___
 - preparation
 - depreciation.
 
-## This app was started as a side project that I continue to work on in my spare time. A draft of the concept can be found in the Excel spreadsheet included in the repository.
+## This app was started as a an assignment for my advanced programming class and has become a side project that I continue to work on in my spare time. A draft of the concept can be found in the Excel spreadsheet included in the repository.
